@@ -2,12 +2,12 @@ package com.preethan.banking_finance_api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
+@EnableJpaRepositories(basePackages = "com.preethan.banking_finance_api")
 public class BankingFinanceApiApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(BankingFinanceApiApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(BankingFinanceApiApplication.class, args);
+    }
 }
